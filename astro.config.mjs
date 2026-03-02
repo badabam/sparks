@@ -1,15 +1,19 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
+  // GitHub Pages configuration
+  site: 'https://badabam.github.io',
+  base: '/sparks/',
+
+  // Output static files (required for GitHub Pages)
+  output: 'static',
+
   // Enable strict mode for production
   vite: {
     ssr: {
       external: ['@astrojs/prism']
     }
   },
-
-  // Site URL for sitemaps and canonical URLs
-  site: 'https://sparks-microblog.dev',
 
   // Configure markdown
   markdown: {
