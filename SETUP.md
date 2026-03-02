@@ -139,26 +139,39 @@ Keep it to **100-300 words**. More than that, it's an essay, not a spark.
 
 ## Deployment
 
-### Build for production
+### ✅ GitHub Pages (Already Configured!)
+
+Your site is **live** and auto-deploys on every push:
+
+**Live URL**: https://badabam.github.io/sparks/
+
+**How it works**:
+1. Push changes to `main` branch
+2. GitHub Actions workflow triggers automatically
+3. Site rebuilds and deploys (visible in [Actions tab](https://github.com/badabam/sparks/actions))
+4. Changes live within seconds
+
+**To enable pages in GitHub**:
+1. Go to [Repository Settings](https://github.com/badabam/sparks/settings)
+2. Go to "Pages" section
+3. Source: Select "GitHub Actions"
+4. Done!
+
+The workflow is already configured in `.github/workflows/deploy.yml`
+
+### Manual Build
 
 ```bash
 bun build
 # Output goes to dist/
 ```
 
-### Deploy to Vercel (Recommended)
+### Deploy Elsewhere
 
-1. Push to GitHub
-2. Import to Vercel
-3. Done! (Auto-deploys on push)
-
-### Deploy to Netlify
-
-Same process as Vercel.
-
-### Deploy to GitHub Pages
-
-See Astro docs for static hosting setup.
+If you prefer other hosts:
+- **Vercel**: Push to GitHub, import repo, done
+- **Netlify**: Same process as Vercel
+- **Any static host**: Upload `dist/` folder
 
 ---
 

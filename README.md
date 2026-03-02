@@ -2,6 +2,9 @@
 
 A lightweight microblog for capturing learning moments. Built with Astro.
 
+**Live**: https://badabam.github.io/sparks/
+**Repository**: https://github.com/badabam/sparks
+
 ## What's a Spark?
 
 A spark is a brief moment of insight or discovery about something you've learned. Think of it as:
@@ -70,10 +73,23 @@ bun format           # Format code with Prettier
 
 ## Deployment
 
-Built output goes to `dist/`. Deploy to:
+**GitHub Pages** (Active)
+
+Automatically deployed on every push to `main` branch via GitHub Actions.
+
+- **Live Site**: https://badabam.github.io/sparks/
+- **Workflow**: `.github/workflows/deploy.yml`
+- **Branch**: Deploys from `main` branch
+- **Status**: Check [Actions tab](https://github.com/badabam/sparks/actions)
+
+The site rebuilds and redeploys within seconds of pushing changes.
+
+### Alternative Deployment
+
+If you want to deploy elsewhere:
 - **Vercel** (recommended, zero-config)
 - **Netlify** (zero-config)
-- **GitHub Pages** (static hosting)
+- Other static hosts: Just build with `bun build`
 
 ## Workflow
 
