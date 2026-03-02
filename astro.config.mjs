@@ -1,8 +1,8 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  // GitHub Pages configuration
-  site: 'https://badabam.github.io',
+  // GitHub Pages configuration (gh-pages branch)
+  site: 'https://badabam.github.io/sparks/',
   base: '/sparks/',
 
   // Output static files (required for GitHub Pages)

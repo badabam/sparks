@@ -5,7 +5,7 @@ yarn.lock
 # package-lock.json is committed (required for reproducible CI/CD builds)
 
 # Build outputs
-dist/
+# dist/ is committed to gh-pages branch for deployment
 build/
 .astro/
 
