@@ -2,7 +2,7 @@
 node_modules/
 bun.lockb
 yarn.lock
-package-lock.json
+# package-lock.json is committed (required for reproducible CI/CD builds)
 
 # Build outputs
 dist/
