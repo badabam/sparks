@@ -1,0 +1,39 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const title = 'Sparks';
+const description = 'A microblog about learning moments - quick insights and discoveries.';
+---
+
+<Layout {title} {description}>
+  <header>
+    <h1>Sparks ✨</h1>
+    <p>A microblog for small moments of insight and discovery.</p>
+    <p style="font-size: 0.9em; color: #666; margin-top: 1rem;">
+      Short-form learning notes. Thoughts captured as they spark.
+    </p>
+  </header>
+
+  <section style="margin-top: 3rem;">
+    <h2>Latest Sparks</h2>
+    <p style="color: #999; margin-top: 1rem;">No sparks yet. Start writing about what you're learning!</p>
+  </section>
+</Layout>
+
+<style>
+  header {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    opacity: 0.8;
+  }
+</style>
